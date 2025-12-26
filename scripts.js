@@ -66,4 +66,18 @@ const timelineData = [
 
         timeline.appendChild(entry);
     });
+
+    // Tüm bölümleri açılır/kapanır yap (Timeline içindekiler hariç)
+    const sectionHeaders = document.querySelectorAll('h1, h2, h3');
+    sectionHeaders.forEach(header => {
+        if (!timeline.contains(header)) {
+            header.style.cursor = 'pointer';
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                if (content) {
+                    content.style.display = content.style.display === 'none' ? '' : 'none';
+                }
+            });
+        }
+    });
 });
