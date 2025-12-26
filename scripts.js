@@ -50,7 +50,7 @@ const timelineData = [
 
         let description = document.createElement('p');
         description.textContent = item.description;
-        description.style.display = 'none'; // Initially hide the description
+        description.style.display = 'block'; // Initially show the description
 
         // Click event to toggle the description visibility
         entry.addEventListener('click', function() {
