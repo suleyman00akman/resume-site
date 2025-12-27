@@ -16,6 +16,41 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize language (Default English)
     setLanguage('en');
 
+    // Headshot görseli için stil iyileştirmeleri
+    const headshot = document.querySelector('.headshot');
+    if (headshot) {
+        headshot.style.width = '200px';
+        headshot.style.height = '200px';
+        headshot.style.objectFit = 'cover';
+        headshot.style.borderRadius = '50%';
+        headshot.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.15)';
+    }
+
+    // Dark Mode Toggle Oluşturma ve Mantığı
+    const langToggle = document.querySelector('.language-toggle');
+    if (langToggle) {
+        const themeBtn = document.createElement('button');
+        themeBtn.className = 'theme-toggle';
+        themeBtn.innerHTML = '🌙'; // Varsayılan ikon
+        themeBtn.title = 'Karanlık Modu Aç/Kapat';
+        
+        // Kayıtlı tercihi kontrol et
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeBtn.innerHTML = '☀️';
+        }
+
+        themeBtn.onclick = function() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            themeBtn.innerHTML = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        };
+
+        // Butonu dil seçeneğinin yanına (aynı ebeveyn içine) ekle
+        langToggle.parentNode.insertBefore(themeBtn, langToggle);
+    }
+
 const timelineData = [
     {
         date: '2017 - 2025',
