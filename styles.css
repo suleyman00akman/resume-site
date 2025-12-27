@@ -363,3 +363,16 @@ body.dark-mode .theme-toggle {
         right: 110px; /* Mobilde biraz daha sıkışık olabilir */
     }
 }
+
+/* Link Styles - Tasarım Bütünlüğü İçin */
+a {
+    color: var(--primary-color); /* Varsayılan mavi yerine tema rengi */
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color); /* Üzerine gelince koyulaşsın */
+    text-decoration: underline;
+}

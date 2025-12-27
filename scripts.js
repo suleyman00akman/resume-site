@@ -51,6 +51,22 @@ document.addEventListener('DOMContentLoaded', function() {
         langToggle.parentNode.insertBefore(themeBtn, langToggle);
     }
 
+    // Web Sitesi Entegrasyonu
+    const contactInfo = document.querySelector('.contact-info');
+    if (contactInfo) {
+        // Linkin tekrar eklenmesini önlemek için kontrol
+        if (!contactInfo.innerHTML.includes('suleymanakman.com')) {
+            const websiteDiv = document.createElement('div');
+            websiteDiv.style.marginTop = '8px';
+            websiteDiv.innerHTML = `
+                <a href="https://www.suleymanakman.com" target="_blank" title="Kişisel Web Sitesi">
+                    🌍 www.suleymanakman.com
+                </a>
+            `;
+            contactInfo.appendChild(websiteDiv);
+        }
+    }
+
 const timelineData = [
     {
         date: '2017 - 2025',
