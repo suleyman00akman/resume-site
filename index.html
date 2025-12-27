@@ -15,6 +15,11 @@
 <body>
 
 <div class="resume">
+    <!-- Language Toggle Button -->
+    <div class="language-toggle no-print">
+        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('tr')">TR</button>
+    </div>
 	
 	<div class="top-section">
 		<div class="headshot-container">
@@ -22,7 +27,10 @@
 		</div>
 		<div class="contact-info">
 			<h1>Suleyman Akman</h1>
-			<p class="job-title">DevOps & Cloud Engineer</p>
+			<p class="job-title">
+                <span class="lang-en">DevOps & Cloud Engineer</span>
+                <span class="lang-tr">DevOps & Bulut Mühendisi</span>
+            </p>
 			<p><a href="mailto:suleymanakman@gmail.com" style="text-decoration: none; color: inherit;">suleymanakman@gmail.com</a></p>
 			<p><a href="tel:+905053140043" style="text-decoration: none; color: inherit;">+90 505 314 00 43</a></p>
 			<p><a href="https://www.suleymanakman.com">www.suleymanakman.com</a>
@@ -35,30 +43,43 @@
 				<a href="https://instagram.com/suleyman00akman" target="_blank" class="no-print" style="margin-right: 10px; color: #C13584;"><i class="fab fa-instagram fa-lg"></i></a>
 				<a href="https://medium.com/@suleyman00akman" target="_blank" class="no-print" style="margin-right: 10px; color: #000;"><i class="fab fa-medium fa-lg"></i></a>
 			</div>
-			<button class="print-btn" onclick="window.print()">Print CV</button>
+			<button class="print-btn" onclick="window.print()">
+                <span class="lang-en">Print CV</span>
+                <span class="lang-tr">CV Yazdır</span>
+            </button>
 		</div>
 	</div>
 
 		<section class="resume-section" id="education">
-		<h2>About Me</h2>
+		<h2>
+            <span class="lang-en">About Me</span>
+            <span class="lang-tr">Hakkımda</span>
+        </h2>
 		<div class="about-content">
-			<p>Visionary IT professional with over 20 years of experience in IT infrastructure, system, network, database
+			<p class="lang-en">Visionary IT professional with over 20 years of experience in IT infrastructure, system, network, database
 administration, and security management. Recently pivoted to DevOps and Cloud Engineering,
 leveraging deep background in mission-critical systems (NATO, Naval Forces) to design secure, scalable
 Cloud solutions. Expertise in Containerization (Docker), Orchestration (Kubernetes), CI/CD Automation
 (Jenkins), Infrastructure as Code (Terraform, CloudFormation), and Configuration Management
 (Ansible), Oracle, PostgreSQL, MySQL, MS SQL databases and Middleware Platform. Proven leader with
 a track record of managing large-scale IT operations and digital transformation projects.</p>
+            <p class="lang-tr">BT altyapısı, sistem, ağ, veritabanı ve güvenlik yönetimi konularında 20 yılı aşkın deneyime sahip vizyoner BT profesyoneli. Yakın zamanda DevOps ve Bulut Mühendisliğine yönelerek, kritik görev sistemlerindeki (NATO, Deniz Kuvvetleri) derin geçmişini güvenli, ölçeklenebilir Bulut çözümleri tasarlamak için kullanmaktadır. Konteynerizasyon (Docker), Orkestrasyon (Kubernetes), CI/CD Otomasyonu (Jenkins), Kod Olarak Altyapı (Terraform, CloudFormation) ve Konfigürasyon Yönetimi (Ansible), Oracle, PostgreSQL, MySQL, MS SQL veritabanları ve Ara Katman Platformlarında uzmanlık. Büyük ölçekli BT operasyonlarını ve dijital dönüşüm projelerini yönetme konusunda kanıtlanmış bir lider.</p>
 		</div>
 	</section>
 
     <section class="resume-section" id="experience">
-        <h2>Professional Experience</h2>
+        <h2>
+            <span class="lang-en">Professional Experience</span>
+            <span class="lang-tr">Profesyonel Deneyim</span>
+        </h2>
         <div id="timeline"></div> <!-- Placeholder for timeline entries -->
     </section>
 
 	<section class="resume-section" id="education">
-		<h2>Certifications & Badges</h2>
+		<h2>
+            <span class="lang-en">Certifications & Badges</span>
+            <span class="lang-tr">Sertifikalar & Rozetler</span>
+        </h2>
 		<ul>
 			<li>
 				<span class="degree">AWS Certified Cloud Practitioner</span>
@@ -83,7 +104,10 @@ a track record of managing large-scale IT operations and digital transformation 
 	</section>
 
 	<section class="resume-section" id="education">
-		<h2>Professional Training</h2>
+		<h2>
+            <span class="lang-en">Professional Training</span>
+            <span class="lang-tr">Mesleki Eğitimler</span>
+        </h2>
 		<ul>
 			<li>
 				<span class="degree">Sıfırdan Zirveye Bulut Sistemleri DevOps Bootcamp: CloudFormation, Terraform, Ansible, Docker, Kubernetes, Jenkins, Yönetim.Academy, 2025</span>
@@ -105,14 +129,20 @@ a track record of managing large-scale IT operations and digital transformation 
 
 			</li>
 						<li>
-				<span class="degree">Oracle Open World, Oracle(USA), 2014</span>
+				<span class="degree">
+                    <span class="lang-en">Oracle Open World, Oracle(USA), 2014</span>
+                    <span class="lang-tr">Oracle Open World, Oracle(ABD), 2014</span>
+                </span>
 			</li>
 			<li>
 				<span class="degree">PostgreSQL Database Management, INETD, 2013</span>
 
 			</li>
 			<li>
-				<span class="degree">Information Technologies and Information Security Audit Course, EY Türkiye, 2013</span>
+				<span class="degree">
+                    <span class="lang-en">Information Technologies and Information Security Audit Course, EY Türkiye, 2013</span>
+                    <span class="lang-tr">Bilgi Teknolojileri ve Bilgi Güvenliği Denetim Kursu, EY Türkiye, 2013</span>
+                </span>
 
 			</li>
 			<li>
@@ -120,72 +150,120 @@ a track record of managing large-scale IT operations and digital transformation 
 
 			</li>
 			<li>
-				<span class="degree">Linux Network Services and System Management, İTÜ Cisco Linux Academy, 2010</span>
+				<span class="degree">
+                    <span class="lang-en">Linux Network Services and System Management, İTÜ Cisco Linux Academy, 2010</span>
+                    <span class="lang-tr">Linux Ağ Servisleri ve Sistem Yönetimi, İTÜ Cisco Linux Academy, 2010</span>
+                </span>
 
 			</li>
 			<li>
-				<span class="degree">Linux System Management I, İTÜ Cisco Linux Academy, 2010</span>
+				<span class="degree">
+                    <span class="lang-en">Linux System Management I, İTÜ Cisco Linux Academy, 2010</span>
+                    <span class="lang-tr">Linux Sistem Yönetimi I, İTÜ Cisco Linux Academy, 2010</span>
+                </span>
 
-			</li>
-		</ul>
-	</section>
-
-	<section class="resume-section" id="education">
-		<h2>Projects</h2>
-		<ul>
-			<li>
-				<span class="degree">Oracle 12c Database Security Project, Ankara HQ, 2016</span>
-			</li>
-			<li>
-				<span class="degree">Naval Forces Staff Management Information System, Ankara HQ, 2012 - 2015</span>
-
-			</li>
-			<li>
-				<span class="degree">Gigabit Ethernet Network Project, Altınova-Yalova, 2011</span>
-
-			</li>
-			<li>
-				<span class="degree">Naval Forces Windows Domain Project, Aegean and Mediterranean Region, 2004</span>
-
-			</li>
-			<li>
-				<span class="degree">Naval Forces Logistics IT Systems Project, Gölcük-Kocaeli, 2004</span>
-
-		</ul>
-	</section>
-
-	<section class="resume-section" id="education">
-		<h2>Skills</h2>
-		<ul>
-			<li>
-				<span class="degree">Cloud, DevOps, Infrastructure as Code, IT Management, Google Workspace</span> 
-			</li>
-			<li>
-				<span class="degree">Project Management, Databases, IT Security, Linux Server System Administration, Windows Server System Administration</span>
 			</li>
 		</ul>
 	</section>
 
 	<section class="resume-section" id="education">
-		<h2>Education</h2>
+		<h2>
+            <span class="lang-en">Projects</span>
+            <span class="lang-tr">Projeler</span>
+        </h2>
 		<ul>
 			<li>
-				<span class="degree">Master’s Degree Political and Social Sciences</span>
+				<span class="degree">
+                    <span class="lang-en">Oracle 12c Database Security Project, Ankara HQ, 2016</span>
+                    <span class="lang-tr">Oracle 12c Veritabanı Güvenliği Projesi, Ankara Karargah, 2016</span>
+                </span>
+			</li>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Naval Forces Staff Management Information System, Ankara HQ, 2012 - 2015</span>
+                    <span class="lang-tr">Deniz Kuvvetleri Personel Yönetim Bilgi Sistemi, Ankara Karargah, 2012 - 2015</span>
+                </span>
+
+			</li>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Gigabit Ethernet Network Project, Altınova-Yalova, 2011</span>
+                    <span class="lang-tr">Gigabit Ethernet Ağ Projesi, Altınova-Yalova, 2011</span>
+                </span>
+
+			</li>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Naval Forces Windows Domain Project, Aegean and Mediterranean Region, 2004</span>
+                    <span class="lang-tr">Deniz Kuvvetleri Windows Domain Projesi, Ege ve Akdeniz Bölgesi, 2004</span>
+                </span>
+
+			</li>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Naval Forces Logistics IT Systems Project, Gölcük-Kocaeli, 2004</span>
+                    <span class="lang-tr">Deniz Kuvvetleri Lojistik BT Sistemleri Projesi, Gölcük-Kocaeli, 2004</span>
+                </span>
+
+		</ul>
+	</section>
+
+	<section class="resume-section" id="education">
+		<h2>
+            <span class="lang-en">Skills</span>
+            <span class="lang-tr">Yetenekler</span>
+        </h2>
+		<ul>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Cloud, DevOps, Infrastructure as Code, IT Management, Google Workspace</span>
+                    <span class="lang-tr">Bulut, DevOps, Kod Olarak Altyapı (IaC), BT Yönetimi, Google Workspace</span>
+                </span> 
+			</li>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Project Management, Databases, IT Security, Linux Server System Administration, Windows Server System Administration</span>
+                    <span class="lang-tr">Proje Yönetimi, Veritabanları, BT Güvenliği, Linux Sunucu Yönetimi, Windows Sunucu Yönetimi</span>
+                </span>
+			</li>
+		</ul>
+	</section>
+
+	<section class="resume-section" id="education">
+		<h2>
+            <span class="lang-en">Education</span>
+            <span class="lang-tr">Eğitim</span>
+        </h2>
+		<ul>
+			<li>
+				<span class="degree">
+                    <span class="lang-en">Master’s Degree Political and Social Sciences</span>
+                    <span class="lang-tr">Yüksek Lisans Siyaset ve Sosyal Bilimler</span>
+                </span>
 				<span class="school">Kocaeli University, 2012</span>
 				<p>96,5/100</p>
 			</li>
 			<li>
-				<span class="degree">Associate’s Degree Law School</span>
+				<span class="degree">
+                    <span class="lang-en">Associate’s Degree Law School</span>
+                    <span class="lang-tr">Önlisans Adalet Yüksekokulu</span>
+                </span>
 				<span class="school">Anadolu University, 2013</span>
 				<p>3,63/4</p>
 			</li>
 				<li>
-				<span class="degree">Bachelor’s Degree Economics</span>
+				<span class="degree">
+                    <span class="lang-en">Bachelor’s Degree Economics</span>
+                    <span class="lang-tr">Lisans İktisat</span>
+                </span>
 				<span class="school">Anadolu University, 2007</span>
 				<p>63,2/100</p>
 			</li>
 			<li>
-				<span class="degree">High School Electronic with English Language</span>
+				<span class="degree">
+                    <span class="lang-en">High School Electronic with English Language</span>
+                    <span class="lang-tr">Anadolu Teknik Lisesi Elektronik (İngilizce Hazırlıklı)</span>
+                </span>
 				<span class="school">Beylerbeyi, 2000</span>
 				<p>8,36/10</p>
 			</li>
@@ -193,11 +271,20 @@ a track record of managing large-scale IT operations and digital transformation 
 	</section>
 
 		<section class="resume-section" id="education">
-		<h2>Language Level</h2>
+		<h2>
+            <span class="lang-en">Language Level</span>
+            <span class="lang-tr">Yabancı Dil</span>
+        </h2>
 		<ul>
 			<li>
-				<span class="degree">English</span>
-				<span class="school">Proficiency</span>			
+				<span class="degree">
+                    <span class="lang-en">English</span>
+                    <span class="lang-tr">İngilizce</span>
+                </span>
+				<span class="school">
+                    <span class="lang-en">Proficiency</span>
+                    <span class="lang-tr">Yetkin</span>
+                </span>			
 		</ul>
 	</section>
 
